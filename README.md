@@ -152,31 +152,11 @@ myiotapp/
 - **Dark/Light Mode**: Toggle between dark and light themes using the button in the top-right corner of the dashboard.
 - **Reminders**: View and add reminders in the right sidebar of the dashboard.
 
-## Screenshots
-*(Optional: Add screenshots of the dashboard, home page, etc., if available.)*
-
 ## Technologies Used
 - **Django**: Backend framework for handling requests, routing, and templating.
 - **HTML/CSS/JavaScript**: Frontend for responsive design and interactivity.
 - **Material Icons**: For icons used in the dashboard.
 - **SQLite**: Default database for development.
-
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add your feature description"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-5. Create a pull request with a detailed description of your changes.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
