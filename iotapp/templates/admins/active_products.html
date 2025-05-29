@@ -1,0 +1,32 @@
+<!-- admins/active_products.html -->
+{% extends "base/base.html" %}
+
+{% block title %}Activate Product - My Website{% endblock %}
+
+{% block content %}
+<main>
+  <div class="form-container">
+    <h1>Activate Product</h1>
+    <form id="activate-product-form" action="/activate_product" method="POST">
+      <div class="form-group">
+        <label for="product_id">Product ID</label>
+        <input type="text" id="product_id" name="product_id" placeholder="Enter product ID" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Activate Product</button>
+    </form>
+  </div>
+</main>
+
+<script>
+  // JavaScript to validate product ID format (example: alphanumeric)
+  document.getElementById('activate-product-form').addEventListener('submit', function (e) {
+    const productId = document.getElementById('product_id').value;
+    const regex = /^[A-Za-z0-9]{8,}$/; // Example: At least 8 alphanumeric characters
+
+    if (!regex.test(productId)) {
+      e.preventDefault();
+      alert('Invalid Product ID format!');
+    }
+  });
+</script>
+{% endblock %}

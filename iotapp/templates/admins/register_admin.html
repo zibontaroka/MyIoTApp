@@ -1,0 +1,46 @@
+<!-- admins/admin_dashboard.html -->
+
+{% extends "base/base.html" %}
+
+{% block title %}Register Admin - My Website{% endblock %}
+
+{% block content %}
+<main>
+ 
+  <div class="form-container">
+    <h1>Register Admin</h1>
+    <form id="register-admin-form" action="/register_admin" method="POST">
+      <div class="form-group">
+        <label for="first_name">First Name</label>
+        <input type="text" id="first_name" name="first_name" placeholder="Enter first name" required>
+      </div>
+      <div class="form-group">
+        <label for="last_name">Last Name</label>
+        <input type="text" id="last_name" name="last_name" placeholder="Enter last name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter email" required>
+      </div>
+      <div class="form-group">
+        <label for="admin_type">Admin Type</label>
+        <select id="admin_type" name="admin_type" required>
+          <option value="MainAdmin">Main Admin</option>
+          <option value="ManufactureAdmin">Manufacture Admin</option>
+          <option value="SellsAdmin">Sells Admin</option>
+          <option value="ControlAdmin">Control Admin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="designation">Designation</label>
+        <input type="text" id="designation" name="designation" placeholder="Enter designation" required>
+      </div>
+      <div class="form-group">
+        <label for="employee_id">Employee ID</label>
+        <input type="text" id="employee_id" name="employee_id" placeholder="Enter employee ID" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Register Admin</button>
+    </form>
+  </div>
+</main>
+{% endblock %}

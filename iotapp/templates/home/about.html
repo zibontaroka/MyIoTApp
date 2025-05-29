@@ -1,0 +1,30 @@
+
+{% extends "home/base.html" %}
+    
+{% block title %}About Us{% endblock title %}
+
+{% block maincontent %}
+
+{% load static %}
+
+    <!-- About Us Section -->
+    <section class="about-us-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Welcome to Our IoT Website</h3>
+                    <p>Hello! My name is Md Shaifulla Zibon, and I am a student of Electrical and Electronic Engineering (EEE) at the European University of Bangladesh. This website serves as a platform for practicing and showcasing my IoT projects. Through this site, I aim to develop and demonstrate various IoT solutions, gain practical skills, and share insights on innovative technologies.</p>
+                    
+                    <p>As a student, I am passionate about integrating technology into everyday life to create smarter, more efficient systems. My focus is on building and experimenting with IoT devices, from smart home systems to agricultural monitoring solutions. Each project on this website represents a step in my journey to mastering IoT technologies and their applications.</p>
+                    
+                    <h3>Our Mission</h3>
+                    <p>Our mission is to explore and advance the field of IoT by developing practical solutions that address real-world challenges. We strive to provide valuable insights and tools that can help others in their journey to embrace IoT technologies.</p>
+                </div>
+                <div class="about-image">
+                    <img src="{% static 'images/zibon.jpg' %}" alt="Md Shaifulla Zibon">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endblock maincontent %}

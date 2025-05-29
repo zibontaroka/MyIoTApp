@@ -1,0 +1,46 @@
+{% extends "base/base.html" %}
+
+{% block title %}Add Product - My Website{% endblock %}
+
+{% block content %}
+<main>
+  <div class="form-container">
+    <h1>Add Product</h1>
+    <form id="add-product-form" action="/add_product" method="POST">
+      <div class="form-group">
+        <label for="product_name">Product Name</label>
+        <input type="text" id="product_name" name="product_name" placeholder="Enter product name" required>
+      </div>
+      <div class="form-group">
+        <label for="product_id">Product ID</label>
+        <input type="text" id="product_id" name="product_id" placeholder="Enter product ID" required>
+      </div>
+      <div class="form-group">
+        <label for="model_number">Model Number</label>
+        <input type="text" id="model_number" name="model_number" placeholder="Enter model number" required>
+      </div>
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" name="description" placeholder="Enter product description"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" name="price" placeholder="Enter price" step="0.01" required>
+      </div>
+      <div class="form-group">
+        <label for="product_type">Product Type</label>
+        <select id="product_type" name="product_type" required>
+          <option value="Sensor">Sensor</option>
+          <option value="Gateway">Gateway</option>
+          <option value="Actuator">Actuator</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" id="category" name="category" placeholder="Enter category" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  </div>
+</main>
+{% endblock %}
